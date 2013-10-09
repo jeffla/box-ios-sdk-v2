@@ -12,7 +12,7 @@
 #import "BoxFolderPickerViewController.h"
 #import "BoxSDK.h"
 #import "BoxLog.h"
-#import "BoxODRefreshControl.h"
+#import "ODRefreshControl.h"
 
 #define kStrechWidthOffset 9.0
 #define kStrechHeightOffset 16.0
@@ -44,7 +44,7 @@
 
 @property (nonatomic, readwrite, strong) NSMutableArray *interuptedAPIOperations;
 
-@property (nonatomic, readwrite, strong) BoxODRefreshControl *customRefreshControl;
+@property (nonatomic, readwrite, strong) ODRefreshControl *customRefreshControl;
 
 @property (nonatomic, readwrite, strong) BoxFolderPickerHelper *helper;
 
@@ -260,7 +260,7 @@
             self.folder = folder;
             self.navigationItem.prompt = nil;   
             
-            self.customRefreshControl = [[BoxODRefreshControl alloc] initInScrollView:self.tableViewPicker.tableView];
+            self.customRefreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableViewPicker.tableView];
             [self.customRefreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
         });
     };
