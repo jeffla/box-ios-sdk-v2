@@ -36,12 +36,6 @@
 
 @implementation BoxODRefreshControl
 
-@synthesize refreshing = _refreshing;
-@synthesize tintColor = _tintColor;
-
-@synthesize scrollView = _scrollView;
-@synthesize originalContentInset = _originalContentInset;
-
 static inline CGFloat BoxLerp(CGFloat a, CGFloat b, CGFloat p)
 {
     return a + (b - a) * p;
