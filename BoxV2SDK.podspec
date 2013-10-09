@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '5.0'
   # s.source       = { :git => "https://github.com/box/box-ios-sdk-v2.git", :tag => "v1.1.0-b4" }
-  s.source       = { :git => "https://github.com/jeffla/box-ios-sdk-v2.git", :commit => "815b5d59" }
+  s.source       = { :git => "https://github.com/jeffla/box-ios-sdk-v2.git", :commit => "0797e263" }
   s.source_files  = 'BoxSDK/*', 'BoxSDK/Categories/*', 'BoxSDK/External/ISO8601DateFormatter/*.{h,m}', 'BoxSDK/External/ODRefreshControl/*.{h,m}', 'BoxSDK/FolderPicker/*', 'BoxSDK/Models/*', 'BoxSDK/OAuth2/*', 'BoxSDK/Operations/*', 'BoxSDK/QueueManagers/*', 'BoxSDK/RequestBuilders/*', 'BoxSDK/ResourceManagers/*'
   s.exclude_files = "BoxSDK/BoxSDK-Prefix.pch"
   s.resources = "BoxSDKResources/Assets/*.png", "BoxSDKResources/Icons/*.png"

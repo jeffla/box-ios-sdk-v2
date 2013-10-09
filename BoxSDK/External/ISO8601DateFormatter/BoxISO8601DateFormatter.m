@@ -54,8 +54,8 @@ static NSMutableDictionary *timeZonesByOffset;
 
 - (id) init {
 	if ((self = [super init])) {
-		parsingCalendar = [[self makeCalendarWithDesiredConfiguration] retain];
-		unparsingCalendar = [[self makeCalendarWithDesiredConfiguration] retain];
+		parsingCalendar = [self makeCalendarWithDesiredConfiguration];
+		unparsingCalendar = [self makeCalendarWithDesiredConfiguration];
 
 		format = BoxISO8601DateFormatCalendar;
 		timeSeparator = BoxISO8601DefaultTimeSeparatorCharacter;
@@ -677,7 +677,7 @@ static BOOL is_leap_year(NSUInteger year);
 
 	if (dateFormat != lastUsedFormatString) {
 		unparsingFormatter = nil;
-		lastUsedFormatString = [dateFormat retain];
+		lastUsedFormatString = dateFormat;
 	}
 
 	if (!unparsingFormatter) {

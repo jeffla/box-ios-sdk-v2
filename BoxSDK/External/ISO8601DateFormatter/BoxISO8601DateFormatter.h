@@ -51,7 +51,7 @@ extern unichar BoxISO8601DefaultTimeSeparatorCharacter;
 //Call this if you get a memory warning.
 + (void) purgeGlobalCaches;
 
-@property (nonatomic, readwrite, retain) NSTimeZone *defaultTimeZone;
+@property (nonatomic, readwrite, strong) NSTimeZone *defaultTimeZone;
 
 #pragma mark Parsing
 
