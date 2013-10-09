@@ -16,7 +16,7 @@
 #import "BoxSDKErrors.h"
 
 // OAuth2
-#import "BoxAuthorizationViewController.h"
+//#import "BoxAuthorizationViewController.h"
 #import "BoxOAuth2Session.h"
 #import "BoxSerialOAuth2Session.h"
 #import "BoxParallelOAuth2Session.h"
